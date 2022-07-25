@@ -14,6 +14,12 @@ const NavContainer = styled.header`
   align-items: center;
   background-color: ${colors.primary};
   color: ${colors.text};
+  @media screen and (max-width: 375px) {
+    margin: 10px;
+  }
+  @media screen and (min-width: 376px) {
+    margin: 20px;
+  }
 `;
 
 const LogoImg = styled.img`
@@ -33,7 +39,6 @@ const NavBar = styled.nav`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  font-family: 'Montserrat', sans-serif;
   a {
     all: unset;
   }

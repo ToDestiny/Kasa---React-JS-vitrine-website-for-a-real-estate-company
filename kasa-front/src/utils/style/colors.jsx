@@ -6,6 +6,7 @@ const colors = {
   text: '#FF6060',
   background: '#FF6060',
   white: '#FDFDFD',
+  black: '#000000',
   purple: '#122A39',
   red: '#E11A10',
 };
