@@ -1,9 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import colors from '../../utils/style/colors';
-//import MediaQuery from 'react-responsive';
-
-//import data from '../../data/logements.json';
 
 const HomeListCardContainer = styled.div`
   margin: 20px;

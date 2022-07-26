@@ -12,7 +12,6 @@ const NavContainer = styled.header`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: ${colors.primary};
   color: ${colors.text};
   @media screen and (max-width: 375px) {
     margin: 10px;
