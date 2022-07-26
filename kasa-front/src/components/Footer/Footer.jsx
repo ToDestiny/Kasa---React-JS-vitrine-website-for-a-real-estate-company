@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import MediaQuery from 'react-responsive';
 import colors from '../../utils/style/colors';
 
 import Logo from '../../assets/logo/logo-white.svg';
@@ -18,7 +17,7 @@ const FooterContainer = styled.footer`
 const LogoImg = styled.img`
   height: 2em;
   width: 5em;
-  margin-top: 10px;
+  padding-top: 10px;
   @media screen and (max-width: 375px) {
     height: 2em;
   }

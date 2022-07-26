@@ -42,6 +42,9 @@ const NavBar = styled.nav`
   a {
     all: unset;
   }
+  a:hover {
+    text-decoration: underline;
+  }
   @media screen and (max-width: 375px) {
     font-size: 8pt;
   }
