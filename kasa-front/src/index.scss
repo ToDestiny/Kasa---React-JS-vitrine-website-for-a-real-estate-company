@@ -4,4 +4,6 @@ body {
   max-width: 100%;
   overflow-x: hidden;
   font-family: 'Montserrat', sans-serif;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }

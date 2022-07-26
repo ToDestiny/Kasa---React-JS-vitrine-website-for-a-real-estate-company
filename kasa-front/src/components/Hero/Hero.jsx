@@ -5,9 +5,9 @@ import MediaQuery from 'react-responsive';
 
 import Img from '../../assets/img/home-background.svg';
 
-const HeroContainer = styled.header`
-  margin: 10px 0 10px 0;
+const HeroContainer = styled.div`
   display: flex;
+  width: 100%;
   justify-content: center;
   align-items: center;
   color: ${colors.white};
@@ -23,7 +23,8 @@ const HeroContainer = styled.header`
 
 const HeroImg = styled.img`
   height: 100%;
-  width: 95%;
+  width: 100%;
+  margin: 20px;
   object-fit: cover;
   filter: brightness(70%);
   @media screen and (max-width: 375px) {
