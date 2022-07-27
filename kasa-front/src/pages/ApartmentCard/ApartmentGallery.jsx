@@ -9,16 +9,24 @@ const ApartmentGalleryContainer = styled.div`
   display: flex;
   margin-bottom: 20px;
   flex-direction: column;
+  @media screen and (max-width: 375px) {
+    margin-right: 10px;
+  }
 `;
 
 const Wrapper = styled.div`
-  height: 20em;
   width: 100%;
   display: flex;
   border-radius: 10px;
   overflow: hidden;
   & i {
     color: ${colors.white};
+  }
+  @media screen and (max-width: 375px) {
+    height: 15em;
+  }
+  @media screen and (min-width: 376px) {
+    height: 30em;
   }
 `;
 
@@ -39,6 +47,9 @@ const ButtonRight = styled.div`
   position: relative;
   top: 50%;
   right: 5%;
+  @media screen and (max-width: 375px) {
+    right: 8%;
+  }
 `;
 
 function ApartmentGallery({ id }) {
@@ -47,17 +58,14 @@ function ApartmentGallery({ id }) {
   const [count, setCount] = useState(0);
 
   function leftImg() {
-    console.log(count);
     if (!count) {
       setCount(l - 1);
-      console.log(count);
     } else {
       setCount(count - 1);
     }
   }
 
   function rightImg() {
-    console.log(count);
     if (count < l - 1) {
       setCount(count + 1);
     } else {
