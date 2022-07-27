@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // Import Pages
 import Home from './pages/Home/Home.jsx';
 import Error from './pages/Error/Error.jsx';
+import APropos from './pages/APropos/APropos.jsx';
 
 // Utils
 import './index.scss';
@@ -19,6 +20,7 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/apropos" element={<APropos />} />
       <Route path="*" element={<Error />} />
     </Routes>
   </BrowserRouter>
