@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import colors from '../../utils/style/colors';
-//import MediaQuery from 'react-responsive';
 
 import data from '../../data/logements.json';
 import HomeListCard from './HomeListCard';
@@ -34,6 +33,7 @@ function HomeList() {
           key={dataIn.id}
           title={dataIn.title}
           cover={dataIn.cover}
+          id={dataIn.id}
         />
       ))}
     </HomeListContainer>

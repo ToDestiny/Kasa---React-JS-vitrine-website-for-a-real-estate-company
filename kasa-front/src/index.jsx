@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/Home.jsx';
 import Error from './pages/Error/Error.jsx';
 import APropos from './pages/APropos/APropos.jsx';
+import ApartmentCard from './pages/ApartmentCard/ApartmentCard.jsx';
 
 // Utils
 import './index.scss';
@@ -21,6 +22,7 @@ root.render(
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/apropos" element={<APropos />} />
+      <Route path=":apartmentId" element={<ApartmentCard />} />
       <Route path="*" element={<Error />} />
     </Routes>
   </BrowserRouter>

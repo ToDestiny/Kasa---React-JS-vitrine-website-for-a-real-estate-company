@@ -34,11 +34,18 @@ const HomeListCardText = styled.div`
   text-align: left;
 `;
 
-function HomeListCard({ title, cover }) {
+const HomeListCardLink = styled.a`
+  text-decoration: none;
+  color: ${colors.white};
+`;
+
+function HomeListCard({ title, cover, id }) {
   return (
     <HomeListCardContainer>
-      <HomeListCardText>{title}</HomeListCardText>
-      <HomeListCardImg src={cover} alt={title} />
+      <HomeListCardLink href={'/' + id}>
+        <HomeListCardText>{title}</HomeListCardText>
+        <HomeListCardImg src={cover} alt={title} />
+      </HomeListCardLink>
     </HomeListCardContainer>
   );
 }
