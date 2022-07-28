@@ -7,6 +7,7 @@ import ApartmentGallery from './ApartmentGallery.jsx';
 
 import data from '../../data/logements.json';
 import ApartmentTag from './ApartmentTag.jsx';
+import ApartmentRating from './ApartmentRating.jsx';
 
 const Apartment = styled.div`
   height: 100%;
@@ -119,8 +120,8 @@ function ApartmentCard() {
                 src={filteredData[0].host.picture}
                 alt="Owner's picture"
               />
-              {console.log(filteredData[0].host.picture)}
             </ApartmentOwnerContainer>
+            <ApartmentRating rating={filteredData[0].rating} />
           </WrapperRight>
         </Wrapper>
       </ApartmentContainer>
