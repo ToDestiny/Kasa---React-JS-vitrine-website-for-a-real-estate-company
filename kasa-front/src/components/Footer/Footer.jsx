@@ -5,7 +5,10 @@ import colors from '../../utils/style/colors';
 import Logo from '../../assets/logo/logo-white.svg';
 
 const FooterContainer = styled.footer`
+  position: fixed;
+  bottom: 0;
   height: 6em;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;

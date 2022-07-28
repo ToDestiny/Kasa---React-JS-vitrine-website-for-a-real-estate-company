@@ -9,9 +9,6 @@ const ApartmentGalleryContainer = styled.div`
   display: flex;
   margin-bottom: 20px;
   flex-direction: column;
-  @media screen and (max-width: 375px) {
-    margin-right: 10px;
-  }
 `;
 
 const Wrapper = styled.div`

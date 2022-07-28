@@ -63,9 +63,9 @@ function AProposCollapse({ open, title, text }) {
         <h2>{title}</h2>
         <button type="button" onClick={handleFilterOpening}>
           {!isOpen ? (
-            <i class="fa-solid fa-angle-down"></i>
+            <i className="fa-solid fa-angle-down"></i>
           ) : (
-            <i class="fa-solid fa-angle-up"></i>
+            <i className="fa-solid fa-angle-up"></i>
           )}
         </button>
       </CollapseTitle>
