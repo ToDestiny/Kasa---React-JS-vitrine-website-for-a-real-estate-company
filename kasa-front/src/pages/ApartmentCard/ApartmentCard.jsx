@@ -128,7 +128,7 @@ function ApartmentCard() {
             <ApartmentLocation>{filteredData[0].location}</ApartmentLocation>
             <ApartmentTagContainer>
               {filteredData[0].tags.map((tag, i) => {
-                return <ApartmentTag tag={tag} key={`${tag}-${i}`} />;
+                return <ApartmentTag tag={tag} key={`tag-${i}`} />;
               })}
             </ApartmentTagContainer>
           </WrapperLeft>

@@ -4,11 +4,16 @@ import colors from '../../utils/style/colors';
 
 const CollapseContainer = styled.div`
   display: flex;
-  width: 50%;
   align-items: center;
   flex-direction: column;
   line-height: 50px;
   margin: 20px 0;
+  @media screen and (max-width: 375px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 376px) {
+    width: 50%;
+  }
 `;
 
 const CollapseTitle = styled.div`

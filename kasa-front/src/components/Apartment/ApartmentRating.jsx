@@ -4,13 +4,15 @@ import colors from '../../utils/style/colors';
 const RatingContainer = styled.div`
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+
   margin: 5px 0;
   @media screen and (max-width: 375px) {
     height: 100%;
+    justify-content: flex-start;
   }
   @media screen and (min-width: 376px) {
     height: 100%;
+    justify-content: flex-end;
   }
 `;
 
