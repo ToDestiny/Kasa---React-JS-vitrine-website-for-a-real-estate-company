@@ -3,11 +3,13 @@ import styled from 'styled-components';
 import Header from '../../components/Header/Header.jsx';
 import Footer from '../../components/Footer/Footer.jsx';
 import colors from '../../utils/style/colors.jsx';
-import ApartmentGallery from './ApartmentGallery.jsx';
 
 import data from '../../data/logements.json';
-import ApartmentTag from './ApartmentTag.jsx';
-import ApartmentRating from './ApartmentRating.jsx';
+import ApartmentTag from '../../components/Apartment/ApartmentTag.jsx';
+import ApartmentRating from '../../components/Apartment/ApartmentRating.jsx';
+import ApartmentGallery from '../../components/Apartment/ApartmentGallery.jsx';
+import ApartmentDescriptionCollapse from '../../components/Apartment/ApartmentDescritpionCollapse.jsx';
+import ApartmentEquipementCollapse from '../../components/Apartment/ApartmentEquipementsCollapse.jsx';
 
 const Apartment = styled.div`
   height: 100%;
@@ -87,6 +89,14 @@ const ApartmentOwnerName = styled.div`
   color: ${colors.primary};
 `;
 
+const CollapseWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+`;
+
 const ApartmentOwnerImg = styled.img`
   height: 3em;
   border-radius: 50px;
@@ -124,6 +134,10 @@ function ApartmentCard() {
             <ApartmentRating rating={filteredData[0].rating} />
           </WrapperRight>
         </Wrapper>
+        <CollapseWrapper>
+          <ApartmentDescriptionCollapse text={filteredData[0].description} />
+          <ApartmentEquipementCollapse text={filteredData[0].equipments} />
+        </CollapseWrapper>
       </ApartmentContainer>
       <Footer />
     </Apartment>
