@@ -27,7 +27,12 @@ const Wrapper = styled.div`
   max-width: 100%;
   display: flex;
   margin: 20px;
-  flex-direction: row;
+  @media screen and (max-width: 375px) {
+    flex-direction: column;
+  }
+  @media screen and (min-width: 376px) {
+    flex-direction: row;
+  }
 `;
 
 const WrapperLeft = styled.div`
@@ -43,14 +48,15 @@ const WrapperLeft = styled.div`
 const WrapperRight = styled.div`
   height: 100%;
   display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
   margin-top: 10px;
   @media screen and (max-width: 375px) {
     width: 100%;
+    flex-direction: row-reverse;
   }
   @media screen and (min-width: 376px) {
     width: 30%;
+    flex-direction: column;
+    justify-content: flex-end;
   }
 `;
 
@@ -91,10 +97,15 @@ const ApartmentOwnerName = styled.div`
 
 const CollapseWrapper = styled.div`
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   height: 100%;
   width: 100%;
+  @media screen and (max-width: 375px) {
+    flex-direction: column;
+  }
+  @media screen and (min-width: 376px) {
+    flex-direction: row;
+  }
 `;
 
 const ApartmentOwnerImg = styled.img`
