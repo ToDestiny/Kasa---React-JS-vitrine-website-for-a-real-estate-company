@@ -10,10 +10,6 @@ import ApartmentCard from './pages/ApartmentCard/ApartmentCard.jsx';
 
 // Utils
 import './index.scss';
-//import './utils/fonts.css';
-
-// Test related
-// import reportWebVitals from './reportWebVitals';
 
 // eslint-disable-next-line no-undef
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -27,8 +23,3 @@ root.render(
     </Routes>
   </BrowserRouter>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-// reportWebVitals();
